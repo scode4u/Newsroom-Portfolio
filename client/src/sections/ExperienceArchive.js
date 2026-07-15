@@ -25,13 +25,13 @@ const EXPERIENCE = [
 
 const EDUCATION = [
   {
-    institution: 'Engineering College',
-    degree: 'B.Tech — Computer Science',
-    period: '2021–2025',
-    type: 'EDUCATION',
+    institution: 'Bennett University',
+    degree: 'MCA - Data Science',
+    period: '2024–2026',
+    type: 'POST GRAD',
     color: '#27AE60',
     headline: 'Computer Science Graduate Masters Algorithms, ML, and Systems Design',
-    deck: 'Four-year program covering data structures, algorithms, machine learning fundamentals, database systems, and software engineering. Active participant in hackathons and coding competitions.',
+    deck: 'Two-year program covering data structures, algorithms, machine learning fundamentals, database systems, and software engineering. Active participant in hackathons and coding competitions.',
     bullets: [
       'Built AI/ML projects applying real-world Python and deep learning',
       'Won Best Coder award at Lex-Hack 1.0 inter-college hackathon',
