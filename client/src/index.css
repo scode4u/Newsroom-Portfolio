@@ -1,0 +1,139 @@
+/* ============================================================
+   SNN — Suryansh News Network
+   Theme: Cream Newsprint + Vibrant Pastel Accents
+   ============================================================ */
+:root {
+  /* Newsprint backgrounds */
+  --cream:     #FAF6EE;
+  --cream-2:   #F3EDE0;
+  --cream-3:   #EBE3D2;
+  --white:     #FFFFFF;
+  --newsprint: #F7F2E8;
+
+  /* Borders — ink-like */
+  --ink-light: #D8CFBC;
+  --ink-mid:   #B8AD98;
+  --ink-dark:  #7A6E5A;
+
+  /* SNN Brand — deep red like CNN */
+  --snn-red:   #C0392B;
+  --snn-red-2: #E74C3C;
+  --snn-red-bg:rgba(192,57,43,0.08);
+
+  /* Pastel accents — vibrant but not AI-purple */
+  --p-blue:    #2E86AB;
+  --p-blue-bg: rgba(46,134,171,0.09);
+  --p-green:   #27AE60;
+  --p-green-bg:rgba(39,174,96,0.09);
+  --p-amber:   #D4860A;
+  --p-amber-bg:rgba(212,134,10,0.09);
+  --p-rose:    #C0392B;
+  --p-teal:    #16A085;
+  --p-teal-bg: rgba(22,160,133,0.09);
+  --p-coral:   #E67E22;
+  --p-coral-bg:rgba(230,126,34,0.09);
+
+  /* Text */
+  --t-headline: #1A1208;
+  --t-body:     #3D3320;
+  --t-byline:   #6B5E44;
+  --t-caption:  #9C8E74;
+  --t-ghost:    #C4B8A0;
+
+  /* Fonts */
+  --serif:  'Playfair Display', 'Georgia', serif;
+  --body:   'Source Serif 4', 'Georgia', serif;
+  --sans:   'Inter', sans-serif;
+  --mono:   'JetBrains Mono', monospace;
+
+  /* Stock colors */
+  --stock-up:   #27AE60;
+  --stock-down: #C0392B;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream);
+  color: var(--t-body);
+  font-family: var(--body);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--cream-2); }
+::-webkit-scrollbar-thumb { background: var(--ink-mid); border-radius: 3px; }
+
+::selection { background: rgba(192,57,43,0.15); color: var(--snn-red); }
+
+/* Newspaper column rule */
+.col-rule { border-right: 1px solid var(--ink-light); }
+
+/* Section divider — double rule like newspaper */
+.section-rule {
+  border: none;
+  border-top: 3px double var(--ink-dark);
+  margin: 0;
+}
+
+/* News card */
+.news-card {
+  background: var(--white);
+  border: 1px solid var(--ink-light);
+  border-radius: 2px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.news-card:hover {
+  box-shadow: 0 4px 20px rgba(26,18,8,0.10);
+  transform: translateY(-2px);
+}
+
+/* BREAKING badge */
+.breaking-badge {
+  background: var(--snn-red);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 2px;
+}
+
+/* Tag pill */
+.tag {
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 2px;
+  border: 1px solid currentColor;
+}
+
+/* Animations */
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes blink {
+  0%,100% { opacity: 1; }
+  50%      { opacity: 0.2; }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes pulse {
+  0%,100% { opacity: 1; }
+  50%      { opacity: 0.5; }
+}
