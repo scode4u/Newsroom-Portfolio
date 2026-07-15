@@ -3,7 +3,17 @@ const cors    = require('cors');
 const app     = express();
 const PORT    = process.env.PORT || 5000;
 
-app.use(cors({ origin: 'http://localhost:3000' }));
+// app.use(cors({ origin: 'http://localhost:3000' }));
+
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://tazaa-khabar.vercel.app", // replace later with your actual Vercel URL
+    ],
+    methods: ["GET", "POST"],
+  })
+);
 app.use(express.json());
 
 // Live stock-style metrics for skill prices
