@@ -4,9 +4,30 @@ import { useInView } from 'react-intersection-observer';
 
 const EXPERIENCE = [
   {
+    company: 'Itech Mission Pvt. Ltd.',
+    role: 'Data Analyst Intern',
+    period: '2026',
+    type: 'INTERNSHIP',
+    color: '#2E86AB',
+    headline: 'Data Analyst Intern Strengthens Data Processing & Analytics Workflows at Itech Mission',
+    deck: 'During a three-month internship at Itech Mission Pvt. Ltd., Singh developed data processing solutions, automated ETL workflows, and built backend APIs to improve data validation, reporting, and analytics operations.',
+    bullets: [
+      'Developed Python-based ETL pipelines for ingesting and transforming structured datasets',
+      'Performed data cleaning, validation, and preprocessing using Pandas and SQL',
+      'Built RESTful APIs with FastAPI for data upload, processing, and analytics',
+      'Optimized SQL queries and database operations to improve reporting efficiency',
+      'Containerized backend services with Docker for consistent development and deployment'
+    ],
+    tags: ['Python','SQL','Pandas','FastAPI','Docker','ETL','REST API','Data Validation','Analytics'],
+    impact: 90,
+  },
+];
+
+const EXPERIENCE = [
+  {
     company: 'F24 Tech Softwares',
     role: 'DevOps Intern',
-    period: '2024',
+    period: '2025',
     type: 'INTERNSHIP',
     color: '#2E86AB',
     headline: 'Intern Overhauls Cloud Infrastructure at F24 Tech — "Zero Downtime Achieved"',
